@@ -1,0 +1,15 @@
+{
+    "welcome": {
+        "message": "Hallo Welt"
+    },
+    "app": {
+        "title": "Hallo Angular",
+        "custom": "ORXe 3.0 Custom Grid",
+        "basic": "Grundraster mit Elementen darin",
+        "grid-three": "Überschreiben der Elementbreite innerhalb des Rasters",
+        "grid-four": "Überschreiben der Elementhöhe innerhalb des Rasters",
+        "grid-five": "Überschreiben der Standardkonfiguration",
+        "grid-six": "Verschachtelte Elemente erstellen",
+        "grid-seven": "Wiederverwendbare Muster / Klassen"
+    }
+}

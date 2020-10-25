@@ -1,0 +1,43 @@
+<div class="orxe-grid">
+    <div class="destination-1 bg-white" style="--col-grid: span 4">
+        <orxe-input label="Destination" label-value="Destination" placeholder="City, Airport, Address or Landmark"
+            always-floated-label></orxe-input>
+    </div>
+    <div class="check-in-date bg-white" style="--col-grid: span 2">
+        <orxe-input label="Check-in-date" always-floated-label label-value="Check-in-date"></orxe-input>
+    </div>
+    <div class="check-out-date bg-white" style="--col-grid: span 2">
+        <orxe-input label="Check-out-date" always-floated-label label-value="Check-out-date"></orxe-input>
+    </div>
+    <div class="guests-1 bg-white" style="--col-grid: span 4">
+        <orxe-input label="Guests" always-floated-label label-value="Guests"></orxe-input>
+    </div>
+    <div class="search-btn-1" style="--col-grid: span 4">
+        <!-- <orxe-button kind="primary" size="large">Search Flights </orxe-button> -->
+        <orxe-button kind="primary" size="large"> {{ "flight.search-flight-button.value" | orxeTranslate}}
+        </orxe-button>
+    </div>
+    <div class="destination-1 bg-white" style="--col-grid: span 4">
+        <!-- Default Card -->
+        <orxe-card card-type='default-card'></orxe-card>
+    </div>
+    <div class="destination-1 bg-white" style="--col-grid: span 4">
+        <!-- Floating Card -->
+        <orxe-card card-type='floating-card' a11y-close-label='close the card' close-icon>
+            Here is the card content
+        </orxe-card>
+    </div>
+    <div class="destination-1 bg-white" style="--col-grid: span 4">
+        <orxe-datepicker
+         start-date="5-23-2020"
+         min-date="1-23-2020"
+         max-date="11-24-2020"
+         dateFormat="m-d-Y"
+         ></orxe-datepicker>
+         <!-- <orxe-datepicker
+         defaultDate="today"
+         dateFormat="m-d-Y"
+         mode="range"
+         ></orxe-datepicker> -->
+    </div>
+</div>

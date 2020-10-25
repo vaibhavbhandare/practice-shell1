@@ -1,0 +1,75 @@
+<div class="grid-outer">
+    <div class="grid-parent">
+        <h1>ORXe 3.0 Custom Grid</h1>
+        <div class="orxe-grid-custom">
+            <div class="navbar"> 1 navbar </div>
+            <div class="sidebar"> 2 sidebar</div>
+            <div class="content"> 3 content</div>
+            <div class="footer"> 4 footer</div>
+        </div>
+    </div>
+    <!-- global class -->
+    <div class="grid-parent">
+        <h1>Basic grid with elements in it</h1>
+        <div class="orxe-grid">
+            <div class="item text-center"> col 1 </div>
+            <div class="item text-center"> col 2 </div>
+            <div class="item text-center"> col 3 </div>
+            <div class="item text-center"> col 4 </div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>Over-writing the elements width inside the grid</h1>
+        <div class="orxe-grid">
+            <div class="item text-center" style="--col-grid: span 4"> 1 </div>
+            <div class="item text-center" style="--col-grid: span 2"> 2 </div>
+            <div class="item text-center" style="--col-grid: span 2"> 3 </div>
+            <div class="item text-center" style="--col-grid: span 4"> 4 </div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>Over-writing the elements height inside the grid</h1>
+        <div class="orxe-grid" style="--cols-grid: 2;">
+            <div class="item text-center" style="--row-grid: span 2">1</div>
+            <div class="item text-center">2</div>
+            <div class="item text-center">3</div>
+            <div class="item text-center" style="--col-grid: span 2">4</div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>Overwriting the default configuration</h1>
+        <div class="orxe-grid" style="--cols-grid: 7">
+            <!-- grid items -->
+            <div class="item text-center">1</div>
+            <div class="item text-center">2</div>
+            <div class="item text-center">3</div>
+            <div class="item text-center">4</div>
+            <div class="item text-center">5</div>
+            <div class="item text-center">6</div>
+            <div class="item text-center">7</div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>Creating nested elements</h1>
+        <div class="orxe-grid" style="--cols-grid: 2">
+            <div class="orxe-grid" style=" --cols-grid: 3">
+                <div class="item text-center"> Child 1 of 1 </div>
+                <div class="item text-center"> Child 2 of 1 </div>
+                <div class="item text-center"> Child 3 of 1 </div>
+            </div>
+            <div class="item text-center"> Child 2 </div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>Reusable patterns/classes</h1>
+        <!-- By Default grid it gives 4 column as per design -->
+        <div class="orxe-grid">
+            <!-- grid items -->
+            <div class="item text-center custom">1</div>
+            <div class="item text-center custom">2</div>
+            <div class="item text-center custom">3</div>
+            <div class="item text-center">4</div>
+            <div class="item text-center">5</div>
+        </div>
+    </div>
+</div>

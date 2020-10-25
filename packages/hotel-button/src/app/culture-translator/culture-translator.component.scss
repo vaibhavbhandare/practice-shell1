@@ -1,0 +1,68 @@
+.orxe-grid-custom {
+    display: grid;
+    grid-gap: var(--gap-grid, 16px);
+    grid-auto-flow: var(--flow-grid, row);
+    grid-auto-columns: var(--auto-cols-grid, auto);
+    grid-auto-rows: var(--auto-rows-grid, none);
+    grid-template-columns: var(--template-cols-grid, repeat(var(--cols-grid, 4), var(--cols-size-grid, 1fr)));
+    grid-template-rows: var(--template-rows-grid, none);
+    justify-content: var(--jc-grid, space-evenly);
+    justify-items: var(--ji-grid, stretch);
+    align-content: var(--ac-grid, center);
+    align-items: var(--ai-grid, stretch);
+}
+
+.orxe-grid-custom > * {
+    min-width: 0px;
+    max-width: 100%;
+    min-height: 0px;
+    grid-column: var(--col-grid, auto);
+    grid-row: var(--row-grid, auto);
+    justify-self: var(--js-grid, auto);
+    align-self: var(--as-grid, auto);
+    border-radius: 1px solid black;
+}
+
+// below is custom css for grid
+.navbar {
+    --col-grid: var(--specific-navbar-col);
+    --row-grid: var(--specific-navbar-row);
+    border: 1px solid green;
+}
+
+.sidebar {
+    --col-grid: var(--specific-sidebar-col);
+    --row-grid: var(--specific-sidebar-row);
+    border: 1px solid green;
+}
+
+.content {
+    --col-grid: var(--specific-content-col);
+    --row-grid: var(--specific-content-row);
+    border: 1px solid green;
+}
+
+.footer {
+    --col-grid: var(--specific-footer-col);
+    --row-grid: var(--specific-footer-row);
+    border: 1px solid green;
+}
+
+.sidebar.content {
+    height: 400px;
+}
+
+.grid-parent {
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0px;
+    .custom {
+        --col-grid: span 2;
+    }
+}
+
+.item {
+    background: blue;
+    color: white;
+}

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+:host {
+    --icon-color: var(--rating-average);
+}
+
+:root {
+    // following are the custom properties for grid
+    // --specific-navbar-col: 1/5;
+    // --specific-navbar-row: 1/2;
+
+    // --specific-sidebar-col: 1/4;
+    // --specific-sidebar-row: 2/3;
+
+    // --specific-content-col: 4/5;
+    // --specific-content-row: 2/3;
+
+    // --specific-footer-col: 1/5;
+    // --specific-footer-row: 3/4;
+}
+
+// $orxe_grid: (
+//   'grid': (
+//     'breakpoint': 0, // sets the breakpoint
+//     'grid_gap': 16px, // dets the gap between the grid elements
+//     'grid_auto_flow': row, // controls how auto-placed items get inserted in the grid
+//     'grid_auto_columns': auto, // sets a size for the columns in a grid container
+//     'grid_auto_rows': auto, // sets a size for the rows in a grid container
+//     'repeat_columns': 4, // specifies the number of columns in the grid
+//     'repeat_columns_size': 1fr, // specifies the widths of columns in the grid
+//     'justify_content': space-evenly, // distributes the space between elements evenly
+//     'justify_items': stretch, // stretch the elements to fit the container
+//     'align_content': center, // aligns the grid in the center of the grid container
+//     'align_items': stretch, // fills the whole height of the grid cell
+//     'grid_column': span 4, // specifies the grid item's size and location in the grid
+//     'grid_row': auto, // specifies the grid item's size and location in the grid
+//     'justify_self': auto, // aligns the grid item inside the cell along the row
+//     'align_self': auto, // aligns the grid item inside the cell along the column
+//   ),
+// );
+
+orxe-header {
+    --header-title-font-color: var(--neutral);
+    --header-left-icon-color: var(--neutral);
+}

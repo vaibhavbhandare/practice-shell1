@@ -1,0 +1,93 @@
+<div class="grid-outer">
+    <h1>{{ "app.title" | orxeTranslate }}</h1><br>
+    <div class="grid-parent">
+        <h1>{{ "app.custom" | orxeTranslate }}</h1><br>
+        <div class="orxe-grid-custom">
+            <div class="navbar"> 1 navbar </div>
+            <div class="sidebar"> 2 sidebar</div>
+            <div class="content"> 3 content</div>
+            <div class="footer"> 4 footer</div>
+        </div>
+    </div>
+    <!-- global class -->
+    <div class="grid-parent">
+        <h1>{{ "app.basic" | orxeTranslate }}</h1><br>
+        <div class="orxe-grid">
+            <div class="item text-center"> col 1 </div>
+            <div class="item text-center"> col 2 </div>
+            <div class="item text-center"> col 3 </div>
+            <div class="item text-center"> col 4 </div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>{{ "app.grid-three" | orxeTranslate }}</h1><br>
+        <div class="orxe-grid">
+            <div class="item text-center" style="--col-grid: span 4"> 1 </div>
+            <div class="item text-center" style="--col-grid: span 2"> 2 </div>
+            <div class="item text-center" style="--col-grid: span 2"> 3 </div>
+            <div class="item text-center" style="--col-grid: span 4"> 4 </div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>{{ "app.grid-four" | orxeTranslate }}</h1><br>
+        <div class="orxe-grid" style="--cols-grid: 2;">
+            <div class="item text-center" style="--row-grid: span 2">1</div>
+            <div class="item text-center">2</div>
+            <div class="item text-center">3</div>
+            <div class="item text-center" style="--col-grid: span 2">4</div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>{{ "app.grid-five" | orxeTranslate }}</h1><br>
+        <div class="orxe-grid" style="--cols-grid: 7">
+            <!-- grid items -->
+            <div class="item text-center">1</div>
+            <div class="item text-center">2</div>
+            <div class="item text-center">3</div>
+            <div class="item text-center">4</div>
+            <div class="item text-center">5</div>
+            <div class="item text-center">6</div>
+            <div class="item text-center">7</div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>{{ "app.grid-six" | orxeTranslate }}</h1><br>
+        <div class="orxe-grid" style="--cols-grid: 2">
+            <div class="orxe-grid" style=" --cols-grid: 3">
+                <div class="item text-center"> Child 1 of 1 </div>
+                <div class="item text-center"> Child 2 of 1 </div>
+                <div class="item text-center"> Child 3 of 1 </div>
+            </div>
+            <div class="item text-center"> Child 2 </div>
+        </div>
+    </div>
+    <div class="grid-parent">
+        <h1>{{ "app.grid-seven" | orxeTranslate }}</h1><br>
+        <!-- By Default grid it gives 4 column as per design -->
+        <div class="orxe-grid">
+            <!-- grid items -->
+            <div class="item text-center custom">1</div>
+            <div class="item text-center custom">2</div>
+            <div class="item text-center custom">3</div>
+            <div class="item text-center">4</div>
+            <div class="item text-center">5</div>
+        </div>
+    </div>
+    <!-- Default RadioButton -->
+    <orxe-radio></orxe-radio>
+    <!-- Radio button with basic property -->
+    <orxe-radio label="This is label" value="This is value" diabled checked>
+    </orxe-radio>
+
+    <!-- Radio with radio-group-->
+    <orxe-radio-group orientation="horizontal" radio-button-name="demo-radio" error-message="Please select any option"
+        required equal-column value="male" title="Gender">
+        <orxe-radio label="Male" value="male">
+        </orxe-radio>
+        <orxe-radio label="Female" value="female">
+        </orxe-radio>
+    </orxe-radio-group>
+
+    <orxe-coach-mark>
+    </orxe-coach-mark>
+</div>

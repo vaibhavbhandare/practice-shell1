@@ -1,0 +1,21 @@
+{
+  "welcome": {
+    "message": "Hello World"
+  },
+  "app": {
+    "title": "Hello Angular",
+    "custom":"ORXe 3.0 Custom Grid",
+    "basic":"Basic grid with elements in it",
+    "grid-three":"Over-writing the elements width inside the grid",
+    "grid-four": "Over-writing the elements height inside the grid",
+    "grid-five":"Overwriting the default configuration",
+    "grid-six":"Creating nested elements",
+    "grid-seven":"Reusable patterns/classes"
+  },
+  "flight": {
+    "search-flight-button": {
+      "value": "Search Flight",
+      "desc": "This Represent the text of search flight button"
+    }
+  }
+}

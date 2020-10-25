@@ -1,0 +1,60 @@
+<!-- <orxe-header left-icon="ic-menu" left.icon.size="normal" [title]="headerTitle" right-icon="ic-dollar">cxLoyality
+</orxe-header><br>
+
+<orxe-badge aria-label="Descriptive text for badge">
+    <span aria-hidden="true">Badge Label</span>
+</orxe-badge><br>
+<p>{{ "welcome.message" | orxeTranslate }}</p>
+<p>{{(user$ | async)?.name}}</p>
+<p>{{(user$ | async)?.email}}</p>
+<p>{{(user$ | async)?.phone}}</p><br>
+
+
+<orxe-button autofocus size="large" [routerLink]="['/culture']">Click Me</orxe-button><br>
+
+<orxe-icon data-testid="left-prefix" class="icon-color" icon=ic-star size="normal"></orxe-icon><br>
+
+<orxe-input></orxe-input><br>
+
+
+<orxe-toolbar left-icon="ic-arrow-left" left.icon.size="normal" right.icon.size="normal" right-icon="ic-arrow-right"
+    left-icon-a11y="left button" right-icon-a11y="right button">
+    <div class="toolbar-content">
+        Hello Toolbar
+    </div>
+</orxe-toolbar>
+
+<orxe-checkbox checked="checked">People 2</orxe-checkbox>
+<orxe-expansion-panel></orxe-expansion-panel> -->
+
+<div class="orxe-grid">
+    <div style="--col-grid: span 4">
+        <orxe-header fixed left-icon="ic-menu" left.icon.size="normal" [title]="headerTitle" right-icon="ic-dollar">cxLoyality
+        </orxe-header>
+    </div>
+    <div class="selector" style="--col-grid: span 4">
+        <orxe-tab name="tab2">
+            <orxe-tab-item [routerLink]="['/flight']">
+                <orxe-icon icon="ic-flight" size="small" slot="tab-item-icon">
+                </orxe-icon>
+                <span slot="tab-item-label">Flight</span>
+            </orxe-tab-item>
+            <orxe-tab-item  [routerLink]="['/hotel']">
+                <orxe-icon icon="ic-hotel" size="small" slot="tab-item-icon">
+                </orxe-icon>
+                <span slot="tab-item-label">Hotel</span>
+            </orxe-tab-item>
+            <orxe-tab-item [routerLink]="['/car']">
+                <orxe-icon icon="ic-car" size="small" slot="tab-item-icon">
+                </orxe-icon>
+                <span slot="tab-item-label">Cars</span>
+            </orxe-tab-item>
+            <orxe-tab-item>
+                <orxe-icon icon="ic-activity" size="small" slot="tab-item-icon">
+                </orxe-icon>
+                <span slot="tab-item-label">Activity</span>
+            </orxe-tab-item>
+        </orxe-tab>
+    </div>
+</div>
+<router-outlet></router-outlet>
